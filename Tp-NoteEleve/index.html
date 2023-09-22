@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Notes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Liste de Notes</h1>
+        <div class="mb-3">
+            <label for="nomEleve">1- Nom de l'élève:</label>
+            <input type="text" class="form-control" id="nomEleve">
+            <button class="btn btn-primary mt-2" id="ajouterEleve">Ajouter un élève</button>
+        </div>
+        <div class="mb-3">
+            <label for="nomMatiere">2- Nom de la matière:</label>
+            <input type="text" class="form-control" id="nomMatiere">
+            <button class="btn btn-primary mt-2" id="ajouterMatiere">Ajouter une matière</button>
+        </div>
+        <div class="mb-3">
+            <label for="selectEleve">3- Sélectionnez un élève:</label>
+            <select class="form-control" id="selectEleve"></select>
+            <label for="selectMatiere">4- Sélectionnez une matière:</label>
+            <select class="form-control" id="selectMatiere"></select>
+            <label for="note">5- Note:</label>
+            <input type="number" class="form-control" id="note">
+            <button class="btn btn-primary mt-2" id="ajouterNote">Ajouter une note</button>
+        </div>
+        <h2>Détails des notes:</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom Prénom</th>
+                    <th>Matière</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody id="detailsTable">
+            </tbody>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
